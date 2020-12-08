@@ -1,8 +1,11 @@
 from flask import Flask, request, render_template,jsonify
 import pickle
+import sys
+import logging
 
 app = Flask(__name__)
-
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
 
 def do_something(text1):
     loaded_model = pickle.load(open('finalized_model1.pkl', 'rb'))
