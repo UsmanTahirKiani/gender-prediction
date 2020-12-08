@@ -1,1 +1,1 @@
-web: gunicorn gender-pred:app
+web: gunicorn app:app
