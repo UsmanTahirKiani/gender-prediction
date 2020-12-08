@@ -9,4 +9,4 @@ def hello_world():
 
 
 if __name__ == '__main__':
-    app.run(host='111.88.241.98')
+    app.run(host='gender-pred.herokuapp.com')
